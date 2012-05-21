@@ -756,3 +756,585 @@ Served asset /jquery.js - 304 Not Modified (7ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-18 15:24:36 -0600
 Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2012-05-21 09:20:25 -0600
+Processing by TasksController#new as HTML
+  Rendered tasks/new.html.erb within layouts/application (85.3ms)
+Completed 200 OK in 711ms (Views: 538.2ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:20:27 -0600
+Served asset /application.css - 304 Not Modified (100ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:20:27 -0600
+Served asset /tasks.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:27 -0600
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:27 -0600
+Served asset /tasks.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:28 -0600
+Served asset /application.js - 304 Not Modified (36ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2012-05-21 09:20:49 -0600
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mw2fnQpBd6yrqulOLtfWRFwK2/ZaabfsaAKZ9XARQ7E=", "task"=>{"description"=>"prueba 21 de mayo", "priority"=>"8"}, "commit"=>"Create Task"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mTask Exists (0.4ms)[0m  SELECT 1 FROM "tasks" WHERE "tasks"."description" = 'prueba 21 de mayo' LIMIT 1
+  [1m[36mSQL (22.5ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "priority", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 21 May 2012 15:20:49 UTC +00:00], ["description", "prueba 21 de mayo"], ["priority", 8], ["updated_at", Mon, 21 May 2012 15:20:49 UTC +00:00]]
+  [1m[35m (131.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/5
+Completed 302 Found in 333ms (ActiveRecord: 155.1ms)
+
+
+Started GET "/tasks/5" for 127.0.0.1 at 2012-05-21 09:20:49 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTask Load (0.8ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered tasks/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 49ms (Views: 40.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:20:49 -0600
+Served asset /application.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:20:50 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:50 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:50 -0600
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:50 -0600
+Served asset /tasks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:50 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/tasks/5" for 127.0.0.1 at 2012-05-21 09:20:55 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered tasks/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 26.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:20:55 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:55 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:20:55 -0600
+Served asset /tasks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:55 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:55 -0600
+Served asset /tasks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:20:55 -0600
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2012-05-21 09:21:02 -0600
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+  Rendered tasks/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 127ms (Views: 122.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:03 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:03 -0600
+Served asset /tasks.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:03 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:03 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:03 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:03 -0600
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2012-05-21 09:21:10 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered tasks/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 32.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:10 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:10 -0600
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:10 -0600
+Served asset /tasks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:10 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:10 -0600
+Served asset /tasks.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:10 -0600
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2012-05-21 09:21:17 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered tasks/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:17 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:17 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:17 -0600
+Served asset /tasks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:17 -0600
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:17 -0600
+Served asset /tasks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:17 -0600
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2012-05-21 09:21:20 -0600
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.8ms)[0m  SELECT "tasks".* FROM "tasks" 
+  Rendered tasks/index.html.erb within layouts/application (65.5ms)
+Completed 200 OK in 95ms (Views: 90.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:20 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:20 -0600
+Served asset /tasks.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:20 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:20 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:20 -0600
+Served asset /tasks.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:20 -0600
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2012-05-21 09:21:24 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered tasks/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:24 -0600
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:24 -0600
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:24 -0600
+Served asset /tasks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:24 -0600
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:24 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:24 -0600
+Served asset /tasks.js - 304 Not Modified (1ms)
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2012-05-21 09:21:31 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered tasks/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 37ms (Views: 32.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:31 -0600
+Served asset /application.css - 304 Not Modified (98ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:31 -0600
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:31 -0600
+Served asset /tasks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:31 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:31 -0600
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:31 -0600
+Served asset /tasks.js - 304 Not Modified (1ms)
+
+
+Started DELETE "/tasks/3" for 127.0.0.1 at 2012-05-21 09:21:38 -0600
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mw2fnQpBd6yrqulOLtfWRFwK2/ZaabfsaAKZ9XARQ7E=", "id"=>"3"}
+  [1m[36mTask Load (0.6ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mSQL (114.4ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = 3
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 205ms (ActiveRecord: 115.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2012-05-21 09:21:38 -0600
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.7ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+  Rendered tasks/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:38 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:38 -0600
+Served asset /tasks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:38 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:38 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:38 -0600
+Served asset /tasks.css - 304 Not Modified (3ms)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2012-05-21 09:21:41 -0600
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered tasks/edit.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 51ms (Views: 44.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:41 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:41 -0600
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:41 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:21:41 -0600
+Served asset /tasks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:21:41 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started PUT "/tasks/1" for 127.0.0.1 at 2012-05-21 09:21:51 -0600
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mw2fnQpBd6yrqulOLtfWRFwK2/ZaabfsaAKZ9XARQ7E=", "task"=>{"description"=>"h", "priority"=>"123"}, "commit"=>"Update Task", "id"=>"1"}
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 10ms
+
+NoMethodError (undefined method `update_attribbutes' for #<Task:0x9a47ca8>):
+  app/controllers/tasks_controller.rb:19:in `update'
+
+
+  Rendered /home/lourdes/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (17.9ms)
+  Rendered /home/lourdes/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.2ms)
+  Rendered /home/lourdes/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (107.4ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2012-05-21 09:25:07 -0600
+Processing by TasksController#new as HTML
+  Rendered tasks/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 82ms (Views: 41.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:07 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:07 -0600
+Served asset /application.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:07 -0600
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:07 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:07 -0600
+Served asset /tasks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:07 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2012-05-21 09:25:11 -0600
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.7ms)[0m  SELECT "tasks".* FROM "tasks" 
+  Rendered tasks/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 54ms (Views: 46.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:12 -0600
+Served asset /tasks.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:12 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:12 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:12 -0600
+Served asset /tasks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:12 -0600
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2012-05-21 09:25:15 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.6ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered tasks/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:15 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:15 -0600
+Served asset /tasks.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:15 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:15 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:15 -0600
+Served asset /tasks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:15 -0600
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2012-05-21 09:25:17 -0600
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered tasks/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 36ms (Views: 31.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:17 -0600
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:17 -0600
+Served asset /tasks.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:17 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:17 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:17 -0600
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:17 -0600
+Served asset /tasks.js - 304 Not Modified (4ms)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2012-05-21 09:25:26 -0600
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered tasks/edit.html.erb within layouts/application (83.8ms)
+Completed 200 OK in 117ms (Views: 110.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:26 -0600
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:26 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:26 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:26 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:26 -0600
+Served asset /tasks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:26 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started PUT "/tasks/1" for 127.0.0.1 at 2012-05-21 09:25:31 -0600
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GL8ih4j/JJJbwVch0DUxpRSh9vAvT77W+w2oEE22QcA=", "task"=>{"description"=>"hola mundo", "priority"=>"123"}, "commit"=>"Update Task", "id"=>"1"}
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mTask Exists (0.4ms)[0m  SELECT 1 FROM "tasks" WHERE ("tasks"."description" = 'hola mundo' AND "tasks"."id" != 1) LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mUPDATE "tasks" SET "description" = 'hola mundo', "updated_at" = '2012-05-21 15:25:31.990457' WHERE "tasks"."id" = 1[0m
+  [1m[35m (118.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 153ms (ActiveRecord: 120.1ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2012-05-21 09:25:32 -0600
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (1.0ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+  Rendered tasks/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 54ms (Views: 47.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:32 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:32 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:32 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:32 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-21 09:25:32 -0600
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-21 09:25:32 -0600
+Served asset /tasks.css - 304 Not Modified (1ms)
